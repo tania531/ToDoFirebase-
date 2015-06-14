@@ -8,14 +8,15 @@ $(document).ready(function() {
     var todo = $('#todo').val();
 
     ref.push({
-      name: todo
+      name: todo,
+      done:false
     });
 
     $("input[type=text]").val('');
   }); // end btn
 
   ref.on('child_added', function (snapshot) {
-    $("#LScontain").append("<div class='todoItem'>" + snapshot.val().name + "</div>");
+    $("#LScontain").append("<div class='todoItem'>" + snapshot.val().name + "<input type='checkbox' class='done' /></div>");
   });
   $("#LScontain").on("click", ".todoItem", function(){
     $(this).addClass("strikethrough");

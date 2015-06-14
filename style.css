@@ -9,6 +9,30 @@
   color:#aaa;
 }
 
+input.done {
+    float: right;
+    margin: 0 20px;
+}
+
 #LScontain {
-  
+    width: 40%;
+    margin: auto;
+}
+
+.todoItem {
+    font-size: large;
+}
+
+h3 {
+    text-align: center;
+}
+
+form#addTodo {
+    margin: auto 0;
+    text-align: center;
+    margin-top: 30px;
+}
+div#top {
+    margin: auto;
+    text-align: center;
 }
